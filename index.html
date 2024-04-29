@@ -2,125 +2,127 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delicias Sabrosas - Restaurante</title>
+  <title>Restaurante</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="WhatsApp Image 2024-04-26 at 8.51.48 PM.jpeg">
 </head>
 <body>
-  <header>
-    <h1>Delicias Sabrosas</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#especialidades">Especialidades</a></li>
-        <li><a href="#reservas">Reservas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="inicio">
-      <h2>Bienvenido a Delicias Sabrosas</h2>
-      <p>Disfruta de una experiencia culinaria única en un ambiente cálido y acogedor.</p>
-      <img src="imagenes/restaurante.jpg" alt="Restaurante Delicias Sabrosas">
-    </section>
-
-    <section id="menu">
-      <h2>Menú</h2>
-      <h3>Platos principales</h3>
-      <div class="platos">
-        <div class="plato">
-          <img src="imagenes/plato1.jpg" alt="Plato principal 1">
-          <h4>Nombre del plato</h4>
-          <p>Descripción breve del plato.</p>
-          <span class="precio">Precio</span>
+  <div class="wrap-header-hero">
+    <header class="main-header">
+      <div class="header-wrap">
+        <div class="wrap-logo-header">
+          <a class="logo-header" href="/">Traditional Flavor</a>
         </div>
-        <div class="plato">
-            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
-            <h4>Nombre del nuevo plato</h4>
-            <p>Descripción del nuevo plato.</p>
-            <span class="precio">Precio del nuevo plato</span>
+        <div class="wrap-nav-header">
+          <nav class="nav-header">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="toggle-menu">
+                <img src="WhatsApp Image 2024-04-26 at 8.45.13 PM.jpeg" />
+              </i>
+            </label>
+            <ul class="main-menu">
+              <li class="menu-item"><a href="#">Inicio</a></li>
+              <li class="menu-item"><a href="#">Nosotros</a></li>
+              <li class="menu-item"><a href="#">Carta</a></li>
+              <li class="menu-item"><a href="#">Blog</a></li>
+              <li id="nav-main-contact" class="menu-item"><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <!-- Tarjetas de comida -->
+      <section class="wrap section">
+        <div class="wrap-title-section">
+          <h2>Tarjetas de Comida</h2>
+        </div>
+        <div class="column-4 columns">
+          <!-- Tarjeta 1 -->
+          <div class="tarjeta-rest" style="background:url('WhatsApp Image 2024-04-26 at 8.51.48 PM.jpeg') center;background-size: cover;">
+            <div class="wrap-text_tarjeta-rest">
+              <h3>Pizza Especial</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid iure animi, quos tempora voluptas.</p>
+              <div class="cta-wrap_tarjeta-rest">
+                <div class="precio_tarjeta-rest">
+                  <span>12€</span>
+                </div>
+                <div class="cta_tarjeta-rest">
+                  <a href="#">Pedir ahora</a>
+                </div>
+              </div>
+            </div>
           </div>
-          
+          <!-- Tarjeta 2 -->
+          <!-- Aquí van las demás tarjetas de comida -->
         </div>
+      </section>
 
-      <h3>Postres</h3>
-      <div class="platos">
+      <!-- Menús de Restaurante -->
+      <section class="wrap section">
+        <div class="wrap-title-section">
+          <h2>Menús de Restaurante</h2>
         </div>
-        <div class="plato">
-            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
-            <h4>Nombre del nuevo plato</h4>
-            <p>Descripción del nuevo plato.</p>
-            <span class="precio">Precio del nuevo plato</span>
+        <div class="column-3 columns">
+          <!-- Menú mediodía -->
+          <div class="menu-restaurante" style="background: url('img/fondo-menu-restaurante.jpg') center;background-size: cover;">
+            <!-- Contenido del menú -->
           </div>
-          
-
-      <h3>Bebidas</h3>
-      <div class="platos">
+          <!-- Menú noche -->
+          <!-- Aquí van los demás menús -->
         </div>
-        <div class="plato">
-            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
-            <h4>Nombre del nuevo plato</h4>
-            <p>Descripción del nuevo plato.</p>
-            <span class="precio">Precio del nuevo plato</span>
-          </div>
-          <div class="plato">
-            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
-            <h4>Nombre del nuevo plato</h4>
-            <p>Descripción del nuevo plato.</p>
-            <span class="precio">Precio del nuevo plato</span>
-          </div>
-               
-    </section>
+      </section>
 
-    <section id="especialidades">
-      <h2>Especialidades</h2>
-      <div class="platos">
-        <div class="plato">
-          <img src="imagenes/plato_especial1.jpg" alt="Plato especial">
-          <h4>Nombre del plato especial</h4>
-          <p>Descripción detallada del plato especial.</p>
-          <span class="precio">Precio especial</span>
+      <!-- Galería de imágenes -->
+      <section class="section">
+        <div class="wrap-title-section">
+          <h2>Galería de imágenes</h2>
         </div>
-        <div class="plato">
-            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
-            <h4>Nombre del nuevo plato</h4>
-            <p>Descripción del nuevo plato.</p>
-            <span class="precio">Precio del nuevo plato</span>
-          </div>
-                 
+        <div class="column-4 galeria-platos">
+          <!-- Imágenes de la galería -->
         </div>
-    </section>
+      </section>
 
-    <section id="reservas">
-      <h2>Reservas</h2>
-      <form action="#">
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required>
+      <!-- Artículos de Blog -->
+      <section class="section">
+        <div class="wrap-title-section">
+          <h2>Artículos del Blog</h2>
+        </div>
+        <div class="card-wrap">
+          <!-- Artículos del blog -->
+        </div>
+      </section>
 
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora" required>
+      <!-- Otras secciones del restaurante -->
+      <section class="wrap">
+        <!-- Sección de hamburguesas -->
+        <!-- Sección de pizzas -->
+        <!-- Sección de pastas -->
+      </section>
+    </main>
 
-        <label for="comensales">Número de comensales:</label>
-        <input type="number" id="comensales" name="comensales" min="1" required>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap-footer">
+        <!-- Información del restaurante -->
+      </div>
+      <div class="footer-creds">
+        <div class="copy-creds">
+          <p>©2022 · Todos los derechos reservados.</p>
+        </div>
+        <div class="legal-creds">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
 
-        <button type="submit">Reservar mesa</button>
-      </form>
-
-      <p class="mensaje-confirmacion">Su reserva ha sido confirmada. Le esperamos pronto.</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p><strong>Dirección:</strong> Dirección del restaurante</p>
-      <p><strong>Teléfono:</strong> Número de teléfono del restaurante</p>
-      <p><strong>Correo electrónico:</strong> correo@delicias-sabrosas.com</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-7709054.84438061!2d-12.0592941!3d-77.0518133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1d-77.0518133!2d-12.0592941!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-      <form action="#">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="
 
         
