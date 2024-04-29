@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu restaurante - El mejor sabor</title>
+    <title>Tu página de comida</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,87 +11,88 @@
         <h1>Tu restaurante</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li class="menu-desplegable">
-                    <a href="#menu">Menú</a>
-                    <ul class="submenu">
-                        <li><a href="#entradas">Entradas</a></li>
-                        <li><a href="#platos-fuertes">Platos fuertes</a></li>
-                        <li><a href="#postres">Postres</a></li>
-                        <li><a href="#bebidas">Bebidas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li class="carrito-compras">
-                    <a href="#carrito">Carrito <span id="cantidad-carrito">0</span></a>
-                </li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Pedidos en línea</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <img src="banner.jpg" alt="Imagen del restaurante">
-            <h2>¡Bienvenido a Tu restaurante!</h2>
-            <p>Disfruta de una experiencia culinaria única con nuestros deliciosos platos y un ambiente acogedor.</p>
+        <section id="banner">
+            <h2>¡Disfruta de la mejor comida!</h2>
+            <img src="imagen-banner.jpg" alt="Imagen de comida deliciosa">
+        </section>
+
+        <section id="presentacion">
+            <h2>¿Quiénes somos?</h2>
+            <p>Descripción de tu restaurante, su historia, valores y equipo.</p>
         </section>
 
         <section id="menu">
             <h2>Nuestro menú</h2>
-            <div class="categorias">
+            <div class="categoria">
                 <h3>Entradas</h3>
-                <ul class="productos">
-                    <li data-categoria="entradas">
-                        <img src="plato1.jpg" alt="Ensalada César">
-                        <h4>Ensalada César</h4>
-                        <p>Lechuga romana, crutones, queso parmesano, pollo a la plancha y aderezo César.</p>
-                        <span class="precio">S/. 25.00</span>
-                        <button class="agregar-carrito" data-id="1">Agregar al carrito</button>
-                    </li>
-                    </ul>
+                <ul>
+                    <li>Plato 1 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 2 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 3 - Descripción deliciosa y detallada del plato.</li>
+                </ul>
             </div>
-            </section>
+            <div class="categoria">
+                <h3>Platos fuertes</h3>
+                <ul>
+                    <li>Plato 4 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 5 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 6 - Descripción deliciosa y detallada del plato.</li>
+                </ul>
+            </div>
+            <div class="categoria">
+                <h3>Postres</h3>
+                <ul>
+                    <li>Plato 7 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 8 - Descripción deliciosa y detallada del plato.</li>
+                    <li>Plato 9 - Descripción deliciosa y detallada del plato.</li>
+                </ul>
+            </div>
+        </section>
 
-        <section id="nosotros">
-            <h2>¿Quiénes somos?</h2>
-            <p>En Tu restaurante, nos apasiona la comida y brindar una experiencia memorable a nuestros clientes. 
-            Utilizamos ingredientes frescos y de alta calidad para crear platos que deleitarán tu paladar.</p>
+        <section id="pedidos">
+            <h2>Pedidos en línea</h2>
+            <p>Descripción del proceso de pedidos en línea, con enlace al sistema.</p>
         </section>
 
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <form action="#">
+            <p>Información de contacto completa: dirección, teléfono, correo electrónico, etc.</p>
+            <form>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
-
                 <button type="submit">Enviar mensaje</button>
             </form>
         </section>
 
-        <section id="carrito">
-            <h2>Carrito de compras</h2>
-            <div class="productos-carrito">
-                <p>Aún no hay productos en el carrito.</p>
+        <section id="ofertas">
+            <h2>Ofertas especiales</h2>
+            <div class="oferta">
+                <h3>Oferta 1</h3>
+                <img src="imagen-oferta1.jpg" alt="Imagen de la oferta">
+                <p>Descripción de la oferta, precio e información relevante.</p>
             </div>
-            <div class="total-carrito">
-                <span>Total:</span>
-                <span id="total-precio">S/. 0.00</span>
+            <div class="oferta">
+                <h3>Oferta 2</h3>
+                <img src="imagen-oferta2.jpg" alt="Imagen de la oferta">
+                <p>Descripción de la oferta, precio e información relevante.</p>
             </div>
-            <button class="vaciar-carrito">Vaciar carrito</button>
-            <button class="finalizar-compra">Finalizar compra</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Tu restaurante. Todos los derechos reservados.</
-
-            <script src="script.js"></script>
-        </body>
-        </html> 
+            <div class="oferta">
+                <h3>Oferta 3</h3>
+                <img src="imagen-oferta3.
