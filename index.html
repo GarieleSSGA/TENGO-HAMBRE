@@ -1,98 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu página de comida</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias Sabrosas - Restaurante</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tu restaurante</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Pedidos en línea</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Delicias Sabrosas</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="banner">
-            <h2>¡Disfruta de la mejor comida!</h2>
-            <img src="imagen-banner.jpg" alt="Imagen de comida deliciosa">
-        </section>
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a Delicias Sabrosas</h2>
+      <p>Disfruta de una experiencia culinaria única en un ambiente cálido y acogedor.</p>
+      <img src="imagenes/restaurante.jpg" alt="Restaurante Delicias Sabrosas">
+    </section>
 
-        <section id="presentacion">
-            <h2>¿Quiénes somos?</h2>
-            <p>Descripción de tu restaurante, su historia, valores y equipo.</p>
-        </section>
+    <section id="menu">
+      <h2>Menú</h2>
+      <h3>Platos principales</h3>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/plato1.jpg" alt="Plato principal 1">
+          <h4>Nombre del plato</h4>
+          <p>Descripción breve del plato.</p>
+          <span class="precio">Precio</span>
+        </div>
+        <div class="plato">
+            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
+            <h4>Nombre del nuevo plato</h4>
+            <p>Descripción del nuevo plato.</p>
+            <span class="precio">Precio del nuevo plato</span>
+          </div>
+          
+        </div>
 
-        <section id="menu">
-            <h2>Nuestro menú</h2>
-            <div class="categoria">
-                <h3>Entradas</h3>
-                <ul>
-                    <li>Plato 1 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 2 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 3 - Descripción deliciosa y detallada del plato.</li>
-                </ul>
-            </div>
-            <div class="categoria">
-                <h3>Platos fuertes</h3>
-                <ul>
-                    <li>Plato 4 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 5 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 6 - Descripción deliciosa y detallada del plato.</li>
-                </ul>
-            </div>
-            <div class="categoria">
-                <h3>Postres</h3>
-                <ul>
-                    <li>Plato 7 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 8 - Descripción deliciosa y detallada del plato.</li>
-                    <li>Plato 9 - Descripción deliciosa y detallada del plato.</li>
-                </ul>
-            </div>
-        </section>
+      <h3>Postres</h3>
+      <div class="platos">
+        </div>
+        <div class="plato">
+            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
+            <h4>Nombre del nuevo plato</h4>
+            <p>Descripción del nuevo plato.</p>
+            <span class="precio">Precio del nuevo plato</span>
+          </div>
+          
 
-        <section id="pedidos">
-            <h2>Pedidos en línea</h2>
-            <p>Descripción del proceso de pedidos en línea, con enlace al sistema.</p>
-        </section>
+      <h3>Bebidas</h3>
+      <div class="platos">
+        </div>
+        <div class="plato">
+            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
+            <h4>Nombre del nuevo plato</h4>
+            <p>Descripción del nuevo plato.</p>
+            <span class="precio">Precio del nuevo plato</span>
+          </div>
+          <div class="plato">
+            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
+            <h4>Nombre del nuevo plato</h4>
+            <p>Descripción del nuevo plato.</p>
+            <span class="precio">Precio del nuevo plato</span>
+          </div>
+               
+    </section>
 
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>Información de contacto completa: dirección, teléfono, correo electrónico, etc.</p>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
+    <section id="especialidades">
+      <h2>Especialidades</h2>
+      <div class="platos">
+        <div class="plato">
+          <img src="imagenes/plato_especial1.jpg" alt="Plato especial">
+          <h4>Nombre del plato especial</h4>
+          <p>Descripción detallada del plato especial.</p>
+          <span class="precio">Precio especial</span>
+        </div>
+        <div class="plato">
+            <img src="imagenes/plato_nuevo.jpg" alt="Nuevo plato principal">
+            <h4>Nombre del nuevo plato</h4>
+            <p>Descripción del nuevo plato.</p>
+            <span class="precio">Precio del nuevo plato</span>
+          </div>
+                 
+        </div>
+    </section>
 
-        <section id="ofertas">
-            <h2>Ofertas especiales</h2>
-            <div class="oferta">
-                <h3>Oferta 1</h3>
-                <img src="imagen-oferta1.jpg" alt="Imagen de la oferta">
-                <p>Descripción de la oferta, precio e información relevante.</p>
-            </div>
-            <div class="oferta">
-                <h3>Oferta 2</h3>
-                <img src="imagen-oferta2.jpg" alt="Imagen de la oferta">
-                <p>Descripción de la oferta, precio e información relevante.</p>
-            </div>
-            <div class="oferta">
-                <h3>Oferta 3</h3>
-                <img src="imagen-oferta3.
+    <section id="reservas">
+      <h2>Reservas</h2>
+      <form action="#">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="comensales">Número de comensales:</label>
+        <input type="number" id="comensales" name="comensales" min="1" required>
+
+        <button type="submit">Reservar mesa</button>
+      </form>
+
+      <p class="mensaje-confirmacion">Su reserva ha sido confirmada. Le esperamos pronto.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Dirección del restaurante</p>
+      <p><strong>Teléfono:</strong> Número de teléfono del restaurante</p>
+      <p><strong>Correo electrónico:</strong> correo@delicias-sabrosas.com</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-7709054.84438061!2d-12.0592941!3d-77.0518133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1d-77.0518133!2d-12.0592941!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <form action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="
