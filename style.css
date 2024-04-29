@@ -1,88 +1,257 @@
 /* Estilos generales */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+/* Estilos de la cabecera */
+
+.main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.logo-header {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Menú de navegación */
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-main {
-    padding: 20px;
+.menu-item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-/* Estilos específicos de sección */
-section {
-    margin-top: 40px;
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-section h2 {
-    font-size: 24px;
-    color: #333;
+.menu-item a:hover {
+  color: #ffd700;
 }
 
-section p {
-    color: #666;
+/* Efecto de despliegue del menú en dispositivos móviles */
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
 }
 
-/* Estilos de platos */
-.platos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.toggle-menu {
+  display: none;
 }
 
-.plato {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.plato img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.plato h4 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.plato p {
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.plato .precio {
+@media (max-width: 768px) {
+  .checkbtn {
     display: block;
-    font-weight: bold;
-    color: #ff6600;
+  }
+
+  .main-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .main-menu.show {
+    left: 0;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .menu-item {
+    display: block;
+    margin: 50px 0;
+  }
+
+  .menu-item a {
+    display: block;
+  }
+}
+
+/* Animaciones y transiciones de las tarjetas */
+
+.tarjeta-rest {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.wrap-text_tarjeta-rest {
+  padding: 20px;
+}
+
+.wrap-text_tarjeta-rest h3 {
+  margin-top: 0;
+}
+
+.wrap-text_tarjeta-rest p {
+  margin-bottom: 20px;
+}
+
+.precio_tarjeta-rest {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cta_tarjeta-rest a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta_tarjeta-rest a:hover {
+  background-color: #ffd700;
+}
+
+/* Efecto de zoom al pasar el ratón sobre las tarjetas */
+
+.tarjeta-rest:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Estilos del pie de página */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+/* Animación de desplazamiento al hacer clic en enlaces internos */
+
+.scroll-link {
+  cursor: pointer;
+}
+
+/* Estilos y animaciones para las secciones del sitio */
+
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Animación de entrada para las secciones */
+
+.section.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.animated.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos y animaciones para los botones */
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Estilos y animaciones para las imágenes */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  vertical-align: top;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el ratón sobre las imágenes */
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilos y animaciones para las listas */
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.custom-list li:last-child {
+  border-bottom: none;
+}
+
+.custom-list li:hover {
+  background-color: #f0f0f0;
 }
